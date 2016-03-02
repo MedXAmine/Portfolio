@@ -1,43 +1,58 @@
-.jumbotron {
-  background: #532F8C;
-  color: white;
-  padding-bottom: 80px; }
-  .jumbotron .btn-primary {
-    background: #845ac7;
-    border-color: #845ac7; }
-    .jumbotron .btn-primary:hover {
-      background: #7646c1; }
-  .jumbotron p {
-    color: #d9ccee;
-    max-width: 75%;
-    margin: 1em auto 2em; }
-  .navbar + .jumbotron {
-    margin-top: -20px; }
-  .jumbotron .lang-logo {
-    display: block;
-    background: #B01302;
-    border-radius: 50%;
-    overflow: hidden;
+  .jumbotron {
+    background: #532F8C;
+    color: white;
+    padding-bottom: 80px; }
+    .jumbotron .btn-primary {
+      background: #845ac7;
+      border-color: #845ac7; }
+      .jumbotron .btn-primary:hover {
+        background: #7646c1; }
+    .jumbotron p {
+      color: #d9ccee;
+      max-width: 75%;
+      margin: 1em auto 2em; }
+    .navbar + .jumbotron {
+      margin-top: -20px; }
+    .jumbotron .lang-logo {
+      display: block;
+      background: #B01302;
+      border-radius: 50%;
+      overflow: hidden;
+      width: 100px;
+      height: 100px;
+      margin: auto;
+      border: 2px solid white; }
+      .jumbotron .lang-logo img {
+        max-width: 100%; }
+  /* Set the fixed height of the footer here */
+  #footer {
+    height: 60px;
+    background-color: #f5f5f5;
+  }
+
+  .intro-content h1 span, .main-heading h1 span {
+      color: #00B796;
+  }
+
+  .intro-content h2 {
+      color: #fff;
+      text-decoration: underline;
+      text-align: center;
+      font-weight: 300;
+      font-size: 30px;
+  }
+
+h1.border:after, h2.border:after, h3.border:after, h4.border:after, h5.border:after, h6.border:after {
+    background-color: #de3926;
+}
+h1.border:after, h2.border:after, h3.border:after, h4.border:after, h5.border:after, h6.border:after {
     width: 100px;
-    height: 100px;
-    margin: auto;
-    border: 2px solid white; }
-    .jumbotron .lang-logo img {
-      max-width: 100%; }
-/* Set the fixed height of the footer here */
-#footer {
-  height: 60px;
-  background-color: #f5f5f5;
-}
-
-.intro-content h1 span, .main-heading h1 span {
-    color: #00B796;
-}
-
-.intro-content h2 {
-    color: #fff;
-    text-decoration: underline;
+    height: 3px;
+    position: absolute;
     text-align: center;
-    font-weight: 300;
-    font-size: 30px;
+    bottom: -15px;
+    left: 0;
+    margin: 0px;
+    z-index: 1;
+    content: '';
 }
