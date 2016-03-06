@@ -12,4 +12,6 @@
 
     $('.contact-details .social-media [data-toggle="tooltip"]').tooltip();
 
+    $('#nav').localScroll({duration:800});
+
 });
