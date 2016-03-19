@@ -373,6 +373,11 @@ h2 span  {
 
 
 
+@media only screen and (max-width: 991px)
+.aboutWrapper p {
+    text-align: left;
+}
+
 .aboutWrapper img {
   float: left;
 }
