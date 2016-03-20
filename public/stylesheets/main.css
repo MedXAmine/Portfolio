@@ -7,11 +7,21 @@ body {
   overflow-x: hidden;
   padding: 0;
   color: #646464;
-    background: #f0f0f0;
+  background: white;
   font: 300 13px Roboto,sans-serif;
   letter-spacing: .5px;
 }
 
+h4 {
+    font-size: 12px;
+    line-height: 22px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #323232;
+}
+
+}
 
 
 /* CUSTOMIZE THE NAVBAR
@@ -46,7 +56,7 @@ body {
 /* Carousel base class */
 .carousel {
   height: 500px;
-  margin-bottom: 60px;
+
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -260,19 +270,8 @@ span {
  60% {transform: translateY(-15px);}
 }
 
-h2 span{
-  padding: 5px 10px;
-  border-left: 3px double rgba(255,255,255,.3);
-  border-right: 3px double rgba(255,255,255,.3);
-  color: #fff;
-  font-weight: 400;
-  letter-spacing: 2px;
-}
-h2 span  {
-  font-size: 14px;
-  text-transform: uppercase;
-}
-
+/* CUSTOMIZE ABOUT SECTION
+-------------------------------------------------- */
 .about-background h2 {
   display: table;
   margin-left: auto;
@@ -284,9 +283,36 @@ h2 span  {
   font: 700 24px 'Playfair Display',serif;
 }
 
-.about-background h2, .go-top div, .menu .nav, .middle-content {
-  text-align: center;
+.aboutWrapper img {
+  float: left;
+  width: 190px;
+
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
 }
+
+
+.about-text {
+  padding-left: 220px;
+}
+
+.aboutWrapper h3 {
+  margin: 5px 0;
+  color: #505050;
+  font: 700 16px 'Playfair Display',serif;
+  letter-spacing: 1.5px;
+  margin-bottom: 10px;
+  padding: 5px 0 5px 10px;
+}
+
+  .aboutWrapper p {
+   line-height: 22px;
+}
+
+/* SKILSS PROGRESS BAR subection */
 
 #skill-box {
   padding: 0;
@@ -304,7 +330,7 @@ h2 span  {
   border-radius: 0;
 }
 
-.progress, .services-background .owl-carousel .owl-item:last-child {
+.progress, {
   border: none;
 }
 .progress-bar {
@@ -348,102 +374,6 @@ h2 span  {
   left: 0;
 }
 
-
-.menu .nav li.active a::before {
-  background: #1e1e1e;
-}
-
-.menu .nav li a::before {
-  position: absolute;
-  content: '';
-  top: 50%;
-  left: 0;
-  background: 0 0;
-  width: 100%;
-  height: 1px;
-}
-.client-img div, .menu .nav li a::before, .middle-content, .progress-bar::before, .progress::before, .resume-box ul {
-  -webkit-transform: translate(0,-50%);
-  -moz-transform: translate(0,-50%);
-  -ms-transform: translate(0,-50%);
-  -o-transform: translate(0,-50%);
-  transform: translate(0,-50%);
-}
-
-
-
-
-@media only screen and (max-width: 991px)
-.aboutWrapper p {
-    text-align: left;
-}
-
-.aboutWrapper img {
-  float: left;
-}
-.aboutWrapper, .skillsWrapper {
-  padding: 0;
-}
-
-
-
-.aboutWrapper img {
-  float: left;
-}
-
-
-.about-text {
-  padding-left: 220px;
-}
-
-.aboutWrapper img {
-  width: 190px;
-  height: 190px;
-}
-
-
-
-.aboutWrapper img, .box-content .social a, .client-img img, .img img {
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  border-radius: 50%;
-}
-
-h3 {
-  margin: 5px 0;
-  color: #505050;
-  font: 700 16px 'Playfair Display',serif;
-  letter-spacing: 1.5px;
-}
-
-.aboutWrapper h3 {
-  margin-bottom: 10px;
-  padding: 5px 0 5px 10px;
-}
-
-
-.aboutWrapper, .blog-page-content, .contact-form, .educationWrapper, .single-post, .testimonialWrapper {
-  padding-right: 25px;
-}
-
-section {
-  background: #f0f0f0;
-  margin: 0 50px 50px;
-
-}
-
-.about-background {
-     background: #fff;
-  padding: 80px 0;
-}
-
-p {
-  margin: 0 0 3px;
-}
-
-h4, p {
-  line-height: 22px;
-  text-align: justify;
+#skill-box h4 {
+    margin: 0 0 -5px;
 }

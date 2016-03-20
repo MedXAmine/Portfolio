@@ -1,5 +1,23 @@
+@media only screen and (max-width: 768px){
 
-@media only screen and (max-width: 991px)
-.aboutWrapper p {
+	.aboutWrapper {
+	    text-align: center;
+	}
+
+	.aboutWrapper img {
+	     
+	     margin : auto;
+		    float: none;
+	}
+
+	.about-text {
+
+	  padding-left: 0px;
+	  
+	}
+
+	.aboutWrapper p {
     text-align: left;
+}
+
 }
