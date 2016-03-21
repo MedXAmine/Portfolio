@@ -13,6 +13,7 @@
     "express": "4.13.3",
     "font-awesome": "^4.5.0",
     "font-awesome-animation": "0.0.8",
+    "owl-carousel-2": "0.0.3",
     "pg": "4.x"
   },
   "engines": {

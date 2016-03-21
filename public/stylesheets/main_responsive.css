@@ -18,6 +18,16 @@
 
 	.aboutWrapper p {
     text-align: left;
+    }
+
+    .post-box {
+    padding: 0 15px;
+    text-align: left;
+    } 
+
+    .imageWrapper {
+    position: relative;
+    margin-bottom: 20px;
 }
 
 }
