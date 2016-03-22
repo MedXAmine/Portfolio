@@ -19,17 +19,37 @@
 
 
 
- $("#blogSlider").owlCarousel({
-        items: 3,
-        itemsDesktop: [1199, 3],
-        itemsDesktopSmall: [979, 2],
-        itemsTablet: [768, 1],
-        itemsMobile: [479, 1],
-        slideSpeed: 500,
-        pagination: !1,
-        navigation: !1,
-        rewindSpeed: 700
-    });
+
+    $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    slideSpeed: 500,
+    responsiveClass:true,
+    slideSpeed: 500,
+    pagination: !1,
+    navigation: !1,
+    rewindSpeed: 700,
+    nav:false,
+    responsive:{
+        0:{
+            items:1,
+        
+        },
+        600:{
+            items:1,
+          
+        },
+        979:{
+            items:2,
+         
+        },
+        1199:{
+            items:3,
+         
+            
+        }
+    }
+})
 
     var owl = $('#blogSlider');
     owl.owlCarousel();

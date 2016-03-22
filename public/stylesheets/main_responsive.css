@@ -28,6 +28,14 @@
     .imageWrapper {
     position: relative;
     margin-bottom: 20px;
+   }
+
+  .blogWrapper h2{
+    float: none;
 }
+   .customNavigation {
+    margin-bottom: 20px;
+    text-align: center;
+    }
 
 }
