@@ -1,0 +1,36 @@
+{
+  "name": "Portfolio",
+  "description": "A portfolio site that expose my resume",
+  "main": "index.js",
+  "authors": [
+    "MedXAmine <amine.selmi@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "homepage": "https://github.com/MedXAmine/Porfolio",
+  "moduleType": [
+    "es6",
+    "globals",
+    "node"
+  ],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "font-awesome": "^4.5.0",
+    "jquery": "^2.2.2",
+    "owl-carousel": "https://github.com/smashingboxes/OwlCarousel2.git#~2.0.0-beta.3",
+    "jquery.localScroll": "^1.4.0"
+  }
+}
