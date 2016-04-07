@@ -30,6 +30,7 @@
   ],
   "license": "MIT",
   "devDependencies": {
+    "browser-sync": "^2.11.2",
     "csscomb": "^3.1.8",
     "del": "^2.2.0",
     "gulp": "^3.9.1",

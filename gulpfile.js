@@ -20,7 +20,10 @@ var gulp = require('gulp'),
     notify = require('gulp-notify'),
     cache = require('gulp-cache'),
     livereload = require('gulp-livereload'),
+    browserSync = require('browser-sync').create(),
+    nodemon = require('gulp-nodemon'),
     del = require('del');
+
 
 // Styles
 gulp.task('styles', function() {
@@ -68,6 +71,36 @@ gulp.task('clean', function() {
 gulp.task('default', ['clean'], function() {
   gutil.log('Gulp is running with default config!');
   gulp.start('styles', 'scripts', 'images');
+});
+
+// browser-sync static server
+gulp.task('serv', ['browser-sync'], function () {
+});
+
+gulp.task('browser-sync',['clean','scripts', 'images','nodemon'], function() {
+    gutil.log('running gulp serv ');
+	browserSync.init(null, {
+		proxy: "http://localhost:5000",
+        files: ["public/**/*.*"],
+        browser: "google chrome",
+        port: 7000,
+	});
+});
+
+gulp.task('nodemon', function (cb) {
+	
+	var started = false;
+	
+	return nodemon({
+		script: 'index.js'
+	}).on('start', function () {
+		// to avoid nodemon being started multiple times
+		// thanks @matthisk
+		if (!started) {
+			cb();
+			started = true; 
+		} 
+	});
 });
 
 // Watch
