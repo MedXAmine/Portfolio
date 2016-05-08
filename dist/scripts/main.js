@@ -29,24 +29,24 @@ $(document).ready(function () {
         nav: false,
         responsive: {
             0: {
-                items: 1,
+                items: 1
 
             },
             600: {
-                items: 1,
+                items: 1
 
             },
             979: {
-                items: 2,
+                items: 2
 
             },
             1199: {
-                items: 3,
+                items: 3
 
 
             }
         }
-    })
+    });
 
     var owl = $('#blogSlider');
     owl.owlCarousel();

@@ -21,7 +21,7 @@ h4 {
     color: #323232;
 }
 
-}
+
 
 
 /* CUSTOMIZE THE NAVBAR
@@ -527,3 +527,122 @@ h4, p {
     line-height: 22px;
 }
 
+/* CUSTOMIZE COTACT SECTION
+-------------------------------------------------- */
+.contact-background {
+    background: #fff;
+}
+
+.contact-background h2 {
+    margin: 0 0 50px;
+    padding: 5px 0 5px 10px;
+    border-left: 3px double #dcdcdc;
+    text-align: left;
+    font: 700 24px 'Playfair Display',serif;
+}
+
+.contact-form {
+    padding: 0;
+}
+
+.input-style:first-child {
+    padding-right: 20px;
+}
+
+.input-style {
+    float: left;
+    width: 50%;
+}
+
+.input-style, .text-style {
+    margin-bottom: 20px;
+}
+
+
+#map-canvas, .input-style input, .submit-result, .text-style, .text-style textarea {
+    width: 100%;
+}
+
+textarea {
+    height: 150px;
+}
+
+input, textarea {
+    background: #f5f5f5;
+    padding: 15px;
+    border: none;
+    -webkit-transition: ease-out .2s;
+    -moz-transition: ease-out .2s;
+    -o-transition: ease-out .2s;
+    transition: ease-out .2s;
+}
+
+.submit-style:hover {
+    border-color: #1e1e1e;
+    text-decoration: none;
+}
+
+.submit-style {
+    background: 0 0;
+    display: inline-block;
+    padding: 12px 25px;
+    border: 3px double #dcdcdc;
+    color: #1e1e1e;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: linear .1s;
+}
+
+#success {
+    color: #419873;
+}
+
+#error {
+    color: red;
+}
+
+#error, #success {
+    display: none;
+    padding-top: 20px;
+}
+
+
+.info {
+    padding: 0;
+}
+
+#factsWrapper, .employmentWrapper, .info, .sidebar, .skillsWrapper {
+    padding-left: 25px;
+}
+
+.info div {
+    margin-bottom: 30px;
+}
+
+.row, li, ul {
+    margin: 0;
+    padding: 0;
+}
+
+.info li {
+    float: left;
+    padding-right: 20px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.row, li, ul {
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    margin: 5px 0;
+    color: #505050;
+    font: 700 16px 'Playfair Display',serif;
+    letter-spacing: 1.5px;
+}
