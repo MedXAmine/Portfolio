@@ -527,7 +527,7 @@ h4, p {
     line-height: 22px;
 }
 
-/* CUSTOMIZE COTACT SECTION
+/* CUSTOMIZE CONTACT SECTION
 -------------------------------------------------- */
 .contact-background {
     background: #fff;
@@ -645,4 +645,43 @@ h3 {
     color: #505050;
     font: 700 16px 'Playfair Display',serif;
     letter-spacing: 1.5px;
+}
+/* CUSTOMIZE FOOTER SECTION
+-------------------------------------------------- */
+.footer-background {
+    background: #1e1e1e;
+    padding: 50px 0;
+    margin-top: 50px;
+    color: #fff;
+}
+.footer-background ul {
+    display: table;
+    margin: 0 auto 20px;
+    text-align: center
+}
+.footer-background ul a {
+    color: #fff;
+    transition: linear .1s;
+}
+.footer-background ul:hover li a {
+    color: rgba(255, 255, 255, .5)
+}
+.footer-background p a,
+.footer-background ul li a:hover {
+    color: #fff
+}
+.footer-background ul li {
+    display: inline-block;
+    padding-right: 10px;
+    font: italic 400 13px 'Playfair Display', serif;
+    letter-spacing: 1px
+}
+.footer-background ul li:last-child {
+    padding: 0
+}
+.footer-background p {
+    text-align: center
+}
+.footer-background p a:hover {
+    text-decoration: underline
 }
