@@ -678,9 +678,11 @@ h3 {
 .footer-background ul li:last-child {
     padding: 0
 }
+
 .footer-background p {
     text-align: center
 }
+
 .footer-background p a:hover {
     text-decoration: underline
 }
