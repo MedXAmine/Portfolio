@@ -1,7 +1,8 @@
 /**
  * Lazy Plugin
- * @version 2.0.0-beta.3
+ * @version 2.3.4
  * @author Bartosz Wojciechowski
+ * @author David Deutsch
  * @license The MIT License (MIT)
  */
 ;(function($, window, document, undefined) {
@@ -33,7 +34,7 @@
 		 * @type {Object}
 		 */
 		this._handlers = {
-			'initialized.owl.carousel change.owl.carousel': $.proxy(function(e) {
+			'initialized.owl.carousel change.owl.carousel resized.owl.carousel': $.proxy(function(e) {
 				if (!e.namespace) {
 					return;
 				}
@@ -46,9 +47,18 @@
 					var settings = this._core.settings,
 						n = (settings.center && Math.ceil(settings.items / 2) || settings.items),
 						i = ((settings.center && n * -1) || 0),
-						position = ((e.property && e.property.value) || this._core.current()) + i,
+						position = (e.property && e.property.value !== undefined ? e.property.value : this._core.current()) + i,
 						clones = this._core.clones().length,
 						load = $.proxy(function(i, v) { this.load(v) }, this);
+					//TODO: Need documentation for this new option
+					if (settings.lazyLoadEager > 0) {
+						n += settings.lazyLoadEager;
+						// If the carousel is looping also preload images that are to the "left"
+						if (settings.loop) {
+              position -= settings.lazyLoadEager;
+              n++;
+            }
+					}
 
 					while (i++ < n) {
 						this.load(clones / 2 + this._core.relative(position));
@@ -64,15 +74,16 @@
 
 		// register event handler
 		this._core.$element.on(this._handlers);
-	}
+	};
 
 	/**
 	 * Default options.
 	 * @public
 	 */
 	Lazy.Defaults = {
-		lazyLoad: false
-	}
+		lazyLoad: false,
+		lazyLoadEager: 0
+	};
 
 	/**
 	 * Loads all resources of an item at the specified position.
@@ -89,7 +100,7 @@
 
 		$elements.each($.proxy(function(index, element) {
 			var $element = $(element), image,
-				url = (window.devicePixelRatio > 1 && $element.attr('data-src-retina')) || $element.attr('data-src');
+                url = (window.devicePixelRatio > 1 && $element.attr('data-src-retina')) || $element.attr('data-src') || $element.attr('data-srcset');
 
 			this._core.trigger('load', { element: $element, url: url }, 'lazy');
 
@@ -98,11 +109,15 @@
 					$element.css('opacity', 1);
 					this._core.trigger('loaded', { element: $element, url: url }, 'lazy');
 				}, this)).attr('src', url);
+            } else if ($element.is('source')) {
+                $element.one('load.owl.lazy', $.proxy(function() {
+                    this._core.trigger('loaded', { element: $element, url: url }, 'lazy');
+                }, this)).attr('srcset', url);
 			} else {
 				image = new Image();
 				image.onload = $.proxy(function() {
 					$element.css({
-						'background-image': 'url(' + url + ')',
+						'background-image': 'url("' + url + '")',
 						'opacity': '1'
 					});
 					this._core.trigger('loaded', { element: $element, url: url }, 'lazy');
@@ -112,7 +127,7 @@
 		}, this));
 
 		this._loaded.push($item.get(0));
-	}
+	};
 
 	/**
 	 * Destroys the plugin.

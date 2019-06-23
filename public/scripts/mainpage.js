@@ -48,7 +48,7 @@ $(document).ready(function () {
 
             }
         }
-    })
+    });
 
     var owl = $('#blogSlider');
     owl.owlCarousel();

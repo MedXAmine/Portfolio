@@ -30,7 +30,7 @@
     "bootstrap": "^3.3.6",
     "font-awesome": "^4.5.0",
     "jquery": "^2.2.2",
-    "owl-carousel": "https://github.com/smashingboxes/OwlCarousel2.git#~2.0.0-beta.3",
+    "owl-carousel": "https://github.com/OwlCarousel2/OwlCarousel2.git#^2.3.4",
     "jquery.localScroll": "^1.4.0"
   }
 }
