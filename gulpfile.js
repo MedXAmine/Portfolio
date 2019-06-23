@@ -26,7 +26,7 @@ var gulp = require('gulp'),
 
 
 // Styles
-gulp.task('styles', function() {
+/*gulp.task('styles', function() {
   return sass('src/styles/main.scss', { style: 'expanded' })
     .pipe(autoprefixer('last 2 version'))
     .pipe(csscomb())
@@ -35,7 +35,7 @@ gulp.task('styles', function() {
     .pipe(cssnano())
     .pipe(gulp.dest('dist/styles'))
     .pipe(notify({ message: 'Styles task complete' }));
-});
+});*/
 
 // Scripts
 gulp.task('scripts', function() {

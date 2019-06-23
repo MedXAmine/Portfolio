@@ -182,11 +182,13 @@ ul.navbar-right {
 
 .intro-content h1 span, .main-heading h1 span {
   color: #00B796;
+  font-weight: 900;
+text-transform: uppercase;
 }
 
 .intro-content h2 {
   color: #fff;
-  text-decoration: underline;
+  font-family: 'Raleway', sans-serif;
   text-align: center;
   font-weight: 300;
   font-size: 30px;
