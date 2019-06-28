@@ -1,0 +1,41 @@
+@media only screen and (max-width: 768px){
+
+	.aboutWrapper {
+	    text-align: center;
+	}
+
+	.aboutWrapper img {
+	     
+	     margin : auto;
+		    float: none;
+	}
+
+	.about-text {
+
+	  padding-left: 0px;
+	  
+	}
+
+	.aboutWrapper p {
+    text-align: left;
+    }
+
+    .post-box {
+    padding: 0 15px;
+    text-align: left;
+    } 
+
+    .imageWrapper {
+    position: relative;
+    margin-bottom: 20px;
+   }
+
+  .blogWrapper h2{
+    float: none;
+}
+   .customNavigation {
+    margin-bottom: 20px;
+    text-align: center;
+    }
+
+}
