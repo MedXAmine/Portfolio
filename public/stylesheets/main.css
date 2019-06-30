@@ -387,7 +387,7 @@ span {
   border-radius: 0;
 }
 
-.progress, {
+.progress {
   border: none;
 }
 .progress-bar {
@@ -445,6 +445,10 @@ span {
   overflow: hidden;
   padding-bottom: 72px;
   /*padding-top: 90px;*/
+}
+
+section#resume div h2 span {
+  color: #313131;
 }
 
 #resume a, #resume a:visited  { color: #11ABB0; }
