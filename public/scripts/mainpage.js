@@ -66,5 +66,42 @@ $(document).ready(function () {
         owl.trigger('prev.owl.carousel', [300]);
     });
 
+ // toggle class .active
+ $('#lihome').click(function () {
+    $(".nav li").removeClass("active");//this will remove the active class from 
+    $('#lihome').addClass('active');
+});
+
+ // toggle class .active
+ $('#liabout').click(function () {
+    $(".nav li").removeClass("active");//this will remove the active class from 
+    $('#liabout').addClass('active');
+});
+
+ // toggle class .active
+ $('#liprofile').click(function () {
+    $(".nav li").removeClass("active");//this will remove the active class from 
+    $('#liprofile').addClass('active');
+});
+
+ // toggle class .active
+ $('#liresume').click(function () {
+    $(".nav li").removeClass("active");//this will remove the active class from 
+    $('#liresume').addClass('active');
+});
+
+ // toggle class .active
+ $('#liportfolio').click(function () {
+    $(".nav li").removeClass("active");//this will remove the active class from 
+    $('#liportfolio').addClass('active');
+});
+
+ // toggle class .active
+ $('#licontact').click(function () {
+    $(".nav li").removeClass("active");//this will remove the active class from 
+    $('#licontact').addClass('active');
+});
+
+
 
 });

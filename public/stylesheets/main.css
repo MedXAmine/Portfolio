@@ -104,6 +104,19 @@ h4 {
   width: auto;
 }
 
+ul#nav li a:active { 
+  background-color: transparent !important; 
+}
+ul#nav li.active a { 
+  color: #ed5565;
+  /*border-bottom: 2px solid #ed5565; */ 
+}
+
+ul#nav li a:hover { 
+  color: #ed5565;
+  border-bottom: 2px solid #fff;
+}
+
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
