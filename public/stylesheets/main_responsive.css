@@ -1,3 +1,16 @@
+/* ==================================================================
+
+*   Portfolio Media Queries
+
+TOC : 
+
+1. screenwidth less than 1024px (Medium Screen/Large Tablets)
+2. screenwidth less than 900px (Tablets)
+3. screenwidth less than 767px (Mobile wide/Smaller Tablets)
+4. screenwidth less than 480px (Small Screen Mobile)
+
+
+/* ================================================================== */
 @media only screen and (max-width: 768px) {
 
   .aboutWrapper {
@@ -59,4 +72,113 @@
   line-height: 24px;
   width: 260px !important;
 }
+
+   /* Call To Action Section
+   /* ----------------------------------------------------------------- */
+   #call-to-action {
+    padding-bottom: 30px;
+    padding-top: 20px;
+    text-align: center;
+  }
+   #call-to-action h1 {
+      font: 16px/24px 'Open Sans', sans-serif;
+      text-align: center;
+      margin-bottom: 30px;
+      text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
+   }
+   #call-to-action h1 span { display: none; }
+   #call-to-action p { font-size: 15px; }
 }
+
+/* mobile narrow
+  -------------------------------------------------------------------------- */
+
+@media only screen and (max-width: 480px) {
+
+  .section-title {
+    font-size: 16px;
+    line-height: 24px;
+    width: 260px!important;
+  }
+
+   /* mobile navigation
+   -------------------------------------------------------------------- */
+   #m-nav ul#nav { width: auto; float: none; }
+
+   /* header styles
+   -------------------------------------------------------------------- */
+   header .banner { padding-top: 24px; }
+   header .banner-text h1 {
+      font: 40px/1.1em 'Open Sans', sans-serif;      
+      margin: 0 auto 24px auto;
+   }
+   header .banner-text h3 {
+      font: 14px/1.9em 'Raleway', sans-serif;
+      width: 90%;
+   }
+  
+   /* header social links */
+   header .social { font-size: 20px;}
+   header .social li { margin: 0 6px; }
+
+   /* About
+  ------------------------------------------------------------------------ */
+   #social {
+     height: 80px;
+     width: 100%;
+   }
+   
+   .social-container {
+     width: 100%;
+   }
+   
+   .social-container .social {
+     font-size: 20px;
+   }
+
+   .social-container .social li {
+     margin: 0 8px;   }
+
+  #about p:first-child:first-letter {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    color: #cbcbcb;
+    float: none;
+    font-size: inherit;
+    line-height: 30px;
+    margin: 0;
+    padding: 0;
+  }
+
+   /* Resume
+   ------------------------------------------------------------------------ */
+   .timeline:before {
+     position: absolute;
+     top: 0;
+     left: 0;
+   }
+
+   .timeline-event-icon {
+     margin: 10px 8px 8px -40px;
+   }
+
+   .timeline-event-copy {
+     left: 10px;
+     width: 95%;
+     padding: 25px 32px 0;
+   }
+
+   .award-list ul li  {
+      text-align: center;
+      background: #ecf0f1;
+      padding: 15px 5px;
+   }
+
+   .award-list ul li span i {
+      display: block;
+      float: none!important;
+      margin: 0 auto!important;
+   }
+
+   #call-to-action h2 {
+     font: 700 24px/36px "Open Sans",sans-serif;
+   }

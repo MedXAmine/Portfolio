@@ -1,6 +1,30 @@
+/*-----------------------------------------------------------------------------------
+/*
+/* Script for Resume
+/*
+-----------------------------------------------------------------------------------*/
+
+/*----------------------------------------------------*/
+/* Preloader
+------------------------------------------------------ */
+$(window).load(function(){
+
+    $('.loader').fadeOut();    
+    $('#preloader').delay(350).fadeOut('slow');    
+    $('body').delay(350);   
+
+    });
+
+
 $(document).ready(function () {
 
     'use strict';
+
+    $("html").niceScroll({
+        cursorcolor:"#11abb0", // Set cursor color
+        cursorwidth: "8", // Sety cursor width
+        cursorborder: "" // Set cursor border color, default left none
+      });
 
 
     /*  ----------------------------------------
