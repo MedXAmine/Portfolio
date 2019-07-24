@@ -989,6 +989,57 @@ img {
   margin-right: auto;
 }
 
+/* ------------------------------------------------------------------ */
+/* 7. Call To Action Section
+/* ------------------------------------------------------------------ */
+
+#call-to-action {
+  background: #212121;
+  padding-top: 66px;
+  padding-bottom: 48px;
+}
+#call-to-action h1 {
+  font: 18px/24px 'opensans-bold', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #fff;
+  text-align: center;
+}
+#call-to-action h1 span { 
+ display: block; 
+}
+
+#call-to-action .action {
+  margin-top: 12px;
+}
+#call-to-action h2 {
+  font: 28px/36px 'Open Sans', sans-serif;
+  font-weight: 700;
+  color: #EBEEEE;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+#call-to-action h2 a {
+  color: inherit;
+}
+#call-to-action p {
+  color: #888;
+  font-size: 17px;
+}
+
+#call-to-action .button:hover,
+#call-to-action .button:active {
+  background: #FFFFFF;
+  color: #0D0D0D;
+}
+#call-to-action p span {
+ font-family: 'Open Sans', sans-serif; 
+ font-weight: 700;
+ color: #D8D8D8;
+}
+
+
+
 /* CUSTOMIZE BLOG SECTION
 -------------------------------------------------- */
 .blogWrapper {

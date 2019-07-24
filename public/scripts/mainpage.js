@@ -66,6 +66,9 @@ $(document).ready(function () {
         owl.trigger('prev.owl.carousel', [300]);
     });
 
+/*----------------------------------------------------*/
+/* Highlight the current section in the navigation bar
+------------------------------------------------------*/
  // toggle class .active
  $('#lihome').click(function () {
     $(".nav li").removeClass("active");//this will remove the active class from 
