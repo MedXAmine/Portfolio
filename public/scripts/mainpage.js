@@ -74,11 +74,11 @@ $(document).ready(function () {
     /* Highlight the current section in the navigation bar
     ------------------------------------------------------*/
 
-  /*  var sections = $("section");
+    var sections = $("section");
     var navigation_links = $("#m-nav a");
 
     sections.waypoint({
-
+ 
         handler: function (event, direction) {
 
             var active_section;
@@ -86,7 +86,7 @@ $(document).ready(function () {
             active_section = $(this);
             if (direction === "up") active_section = active_section.prev();
 
-            var active_link = $('#navbar a[href="#' + active_section.attr("id") + '"]');
+            var active_link = $('#m-nav a[href="#' + active_section.attr("id") + '"]');
 
             navigation_links.parent().removeClass("active");
             active_link.parent().addClass("active");
@@ -94,7 +94,7 @@ $(document).ready(function () {
         },
         offset: '35%'
 
-    });*/
+    });
 
     /*----------------------------------------------------*/
     /*  On scroll blur header
